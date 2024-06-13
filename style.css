@@ -1,0 +1,673 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #000;
+    color: #fff;
+
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("images/home.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+nav .logo{
+    width: 150px;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    color: #fff;
+    padding: 8px 25px;
+    background-color: red;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 520;
+}
+.english-btn{
+    background: transparent;
+    border: 1px solid white;
+    
+}
+.english-btn-icon{
+    margin-left: 10px;
+    width: 10px;
+}
+
+.main{
+    /* display: flex; */
+    position: absolute;
+    /* font-size: 25px; */
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    line-height: 60px;
+    font-weight:bold;
+    text-align: center;
+    /* transition-duration: 2s; */
+    font-family:Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+
+.main .main-content{
+    font-size:50px;
+    font-weight: 800;
+  }
+
+@media only screen and (max-width:800px)
+  {
+    .header{
+        width: 100%;
+        height: 70vh;
+       
+    }
+    .main{
+        width: 90%;
+        font-weight:500 ;
+        line-height: 50px;
+        text-align: center;
+    }
+    .main .main-content{
+       color: white;
+       font-size: 30px;
+       
+    }
+
+    .main .main-h3{
+        font-size:20px;
+        
+    }
+
+    .main .main-p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px; 
+        margin-top: 10px; 
+    
+    }
+
+    .main .input-login input{
+        width:55%;
+        border-radius: 5px;
+    }
+    .main .input-login button{
+        border-radius: 5px;
+        width: 35%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        height:7.5vh;
+
+    }
+
+}
+/* /* 
+@media only screen and (min-width:300px) and
+ (max-width:600px)
+ {
+  .main .input-login button{
+        height: 50px;
+        text-align: center;
+    }
+ */
+
+ */
+
+
+.main h3{
+   font-size:25px;
+   font-weight: 400;
+}
+
+.main p{
+    font-size:20px ;
+    font-weight: 400;
+}
+.sign{
+
+}
+.sign:hover{
+    cursor: pointer;
+    background-color: rgb(185, 32, 32);
+}
+.input-login{
+    background: transparent;
+    box-sizing: border-box;
+    
+}
+
+.input-login input{
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border:1px solid rgb(89, 89, 89);
+    outline: none;
+    background: transparent;
+    background-color:rgba(0,0,0,0.5);
+    width:30%;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.input-login button{
+    padding: 19px 13px;
+    font-size: 22px;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    background-color:red;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+.input-login button:hover{
+    cursor: pointer;
+    background-color: rgb(185, 32, 32);
+}
+
+.horizontal-line-1{
+    height: 7px;
+    background-color: #2d2a2a;
+}
+
+.main-content-2{
+    height: 522px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.content-2-heading{
+    width: 40%;
+
+    
+}
+.content-2-heading h1{
+    font-size: 45px;
+    width:450px;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.content-2-heading h3{
+    font-size: 25px ;
+    font-weight: 600;
+    width:130%;
+}
+
+.content-2-image-tv{
+    /* width: 300px;
+    height: 400px; */
+    text-align: right;
+}
+.content-2-image-tv img{
+    width:80%;
+}
+
+
+.main-content-3{
+    height: 522px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.content-3-heading{
+    width: 30%;
+    margin-left: -100px;
+    
+    
+    
+}
+.content-3-heading h1{
+    font-size: 45px;
+    width:650px;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.content-3-heading h3{
+    font-size: 25px ;
+    font-weight: 600;
+    width:130%;
+}
+
+.content-3-image img{
+    
+    width:90%;
+    margin-left: -100px;
+}
+
+/* media query for container-3 starts here  */
+
+
+.main-content-4{
+    height: 522px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;  margin-left: 32px;
+    margin-right: 32px;
+
+}
+.content-4-heading{
+    width: 40%;
+    margin-left: 150px;
+
+    
+}
+.content-4-heading h1{
+    font-size: 45px;
+    width:500px;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.content-4-heading h3{
+    font-size: 25px ;
+    font-weight: 600;
+    width:100%;
+}
+
+.content-4-image{
+    /* width: 300px;
+    height: 400px; */
+    /* text-align: right; */
+}
+.content-4-image img{
+
+    width:80%;
+}
+
+
+
+
+.main-content-5{
+    height: 522px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content:center;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.content-5-heading{
+    width: 30%;
+    margin-left: -120px;
+    
+    
+}
+.content-5-heading h1{
+    font-size: 45px;
+    width:650px;
+    margin-bottom: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.content-5-heading h3{
+    font-size: 25px ;
+    font-weight: 600;
+    width:130%;
+}
+
+.content-5-image img{
+    
+    width:90%;
+    margin-left: -100px;
+}
+
+/* faqs will start from here */
+
+
+.faqs{
+    /* height: 927.2px; */
+}
+
+.faqs-heading{
+    text-align: center;
+}
+
+.faqs-heading h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 70px;
+}
+
+.faqs .faq-1{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faqs i{
+    font-size: 50px;
+}
+#faq-1-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-1:hover + #faq-1-content{
+    display: flex;
+    
+}
+
+
+
+.faqs .faq-2{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#faq-2-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-2:hover + #faq-2-content{
+    display: flex;
+}
+
+.faqs .faq-3{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#faq-3-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-3:hover + #faq-3-content{
+    display: flex;
+}
+
+
+.faqs .faq-4{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#faq-4-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-4:hover + #faq-4-content{
+    display: flex;
+}
+
+
+.faqs .faq-5{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#faq-5-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-5:hover + #faq-5-content{
+    display: flex;
+}
+
+
+.faqs .faq-6{
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    height: 12vh;
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    /* margin-top: 20px; */
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+#faq-6-content{
+    display:none;
+    font-size: 25px;
+    background-color:rgb(56, 48, 48);
+    margin-left: 13%;
+    margin-right: 13%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+    padding-left: 1.5%;
+    padding: 1.5%;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.faq-6:hover + #faq-6-content{
+    display: flex;
+}
+
+.faqs-form{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    
+}
+
+.faqs-form h3{
+    font-size: 24px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.faqs-input input{
+    width:30%;
+
+
+}
+
+.faqs-input button{
+    
+    height: 9.2vh;
+}
+.change:hover{
+    background-color: #444040;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+
+.footer{
+    padding: 70px 0;
+    height:60vh;
+    
+}
+
+.footer-container{
+   
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 40px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-container a{
+    color:#c7bcbc;
+    font-size: 15px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.footer-container .ques{
+    color:#c7bcbc;
+    font-size: 16.2px;
+    
+    margin: 0 15px;
+    margin-bottom: 15px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.ques-a{
+    margin-left: 5px;
+    font-size: 16.2px;
+}
+
+.english-btn-footer{
+    background: transparent;
+    border: 1px solid rgb(92, 85, 85);
+    margin:15px;
+    
+    
+}
+
+.footer-end{
+    color:#c7bcbc;
+    font-size: 16.2px;
+    
+    margin:3px 15px;
+ 
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
